@@ -25,13 +25,13 @@ const Navbar = () => {
                 <button className='border-none bg-transparent text-black mr-4 uppercase'>Sign In</button>
                 <button className='px-6 py-1 uppercase'>Sign Up</button>
             </div>
-            <div className='md:hidden' onClick={handleClick}>
+            <div className='md:hidden mr-4' onClick={handleClick}>
                 {!nav? <MenuIcon className='w-5'/> : <XIcon className='w-5'/>}
                 
             </div>
         </div>
         
-        <ul className={!nav? 'hidden' : 'absolute bg-zinc-300 w-full px-8 text-center'}>
+        <ul className={!nav? 'hidden' : 'md:hidden absolute bg-zinc-300 w-full px-8 text-center'}>
                     <li className='border-b-2 border-zinc-400 w-full'><a href='/'>Home</a></li>
                     <li className='border-b-2 border-zinc-400 w-full'><a href='/'>About</a></li>
                     <li className='border-b-2 border-zinc-400 w-full'><a href='/'>Support</a></li>
